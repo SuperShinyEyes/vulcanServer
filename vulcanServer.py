@@ -17,4 +17,5 @@ class TodoSimple(Resource):
 api.add_resource(TodoSimple, '/<string:todo_id>')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run()
