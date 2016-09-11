@@ -1,1 +1,1 @@
-web: gunicorn vulcanServer.wsgi --log-file -
+web: gunicorn vulcanServer:app --log-file=-
