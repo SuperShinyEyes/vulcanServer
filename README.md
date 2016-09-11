@@ -15,4 +15,7 @@ $ curl https://powerful-oasis-83494.herokuapp.com/todo2 -d "data=Change my brake
 
 $ curl https://powerful-oasis-83494.herokuapp.com/todo2
 # >> {"todo2": "Change my brakepads"}
+
+curl http://localhost:5000/seyoung-iphone -d "coordinates=33" -X PUT
+# >> {"seyoung-iphone": "33"}
 ```
