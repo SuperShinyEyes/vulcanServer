@@ -13,8 +13,10 @@ class VulcanServer(Resource):
 
     def get(self, detector_id):
         if self.detector_id_exists(detector_id):
+            print("detector_id: %s", detector_id)
             return vulcan_detector_status[detector_id]
         else:
+            print("detector_id: %s doesn't exist", detector_id)
             return {}
 
     # def get(self):
