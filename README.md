@@ -27,3 +27,19 @@ curl http://localhost:5000/seyoung-iphone -d "longitude=-75.19345" -d "latitude=
 
 curl https://powerful-oasis-83494.herokuapp.com/seyoung-iphone -d "longitude=-75.19345" -d "latitude=40.023383" -X PUT
 ```
+
+## Question
+Hei guys, I'm working on client-server communication. The client is using Alamofire and the server is using Python Flask.
+
+Flask has a restful api like `api.add_resource(VulcanServer, '/<string:detector_id>')` for a `PUT` request.
+
+I can make a request on bash like:
+```
+>>> curl http://localhost:5000/seyoung-iphone -d "longitude=-75.19345" -d "latitude=40.023383" -X PUT
+
+## Run a GET request
+>>> curl http://localhost:5000/seyoung-iphone
+{"seyoung-iphone": {"latitude": "40.023383", "longitude": "-75.19345"}}
+```
+
+Now I'm trying to
