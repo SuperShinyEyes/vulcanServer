@@ -28,6 +28,7 @@ class VulcanServer(Resource):
         coordinates['longitude'] = request.form['longitude']
         coordinates['latitude'] = request.form['latitude']
         coordinates['magnitude'] = request.form['magnitude']
+        coordinates['timeStamp'] = request.form['timeStamp']
         vulcan_detector_status[detector_id] = coordinates
         return {detector_id: vulcan_detector_status[detector_id]}
 
