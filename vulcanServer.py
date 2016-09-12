@@ -13,9 +13,12 @@ class VulcanServer(Resource):
 
     def get(self, detector_id):
         if self.detector_id_exists(detector_id):
-            return {detector_id: vulcan_detector_status[detector_id]}
+            return vulcan_detector_status[detector_id]
         else:
             return {}
+
+    # def get(self):
+    #     return vulcan_detector_status
 
     def put(self, detector_id):
         coordinates = {}
