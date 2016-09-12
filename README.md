@@ -18,4 +18,8 @@ $ curl https://powerful-oasis-83494.herokuapp.com/todo2
 
 curl http://localhost:5000/seyoung-iphone -d "coordinates=33" -X PUT
 # >> {"seyoung-iphone": "33"}
+
+curl http://localhost:5000/seyoung-iphone
+
+curl http://localhost:5000/seyoung-iphone -d "longitude=-75.19345" -d "latitude=40.023383" -X PUT
 ```

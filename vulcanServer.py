@@ -18,7 +18,10 @@ class VulcanServer(Resource):
             return {}
 
     def put(self, detector_id):
-        vulcan_detector_status[detector_id] = request.form['coordinates']
+        coordinates = {}
+        coordinates['longitude'] = request.form['longitude']
+        coordinates['latitude'] = request.form['latitude']
+        vulcan_detector_status[detector_id] = coordinates
         return {detector_id: vulcan_detector_status[detector_id]}
 
 
